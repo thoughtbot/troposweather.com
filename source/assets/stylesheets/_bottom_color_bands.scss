@@ -1,0 +1,23 @@
+.bottom-color-bands {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+
+  @include media(max-width 768px) {
+    position: relative;
+  }
+}
+
+.color-row {
+  @include size(100% 32px);
+}
+
+$color-names: "red", "orange", "blue", "light-blue";
+$color-values: $red, $orange, $blue, $light-blue;
+
+@each $color in $color-values {
+  $i: index($color-values, $color);
+  .color-#{nth($color-names, $i)} {
+    background-color: $color;
+  }
+}

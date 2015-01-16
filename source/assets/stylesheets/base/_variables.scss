@@ -1,0 +1,26 @@
+// Typography
+$din-regular: 'DINNextLTPro-Regular';
+$din-ultralight: 'DINNextLTPro-UltraLight';
+$body-font: $din-ultralight, "Helvetica";
+
+// Sizes
+$base-font-size: 28px;
+$base-line-height: $base-font-size * 1.5;
+
+// Colors
+$black: #14141c;
+$red: #eb522e;
+$orange: #f7a400;
+$blue: #00b6ec;
+$light-blue: #72d5f2;
+$thoughtbot-red: #C32F34;
+
+// Background Color
+$base-background-color: $black;
+
+// Padding
+$spacing-block: 20px;
+
+// Widths
+$col-app-width: 320px;
+$col-iphone-width: 306px;

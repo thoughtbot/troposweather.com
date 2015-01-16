@@ -1,0 +1,57 @@
+.container {
+  @include display(flex);
+  @include flex-direction(column);
+  min-height: 100vh;
+}
+
+.page-content {
+  @include flex(1);
+  @include align-items(center);
+  @include display(flex);
+  width: 700px;
+  margin: 0 auto;
+
+  @include media(max-width 520px) {
+    @include flex(0);
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.iphone {
+  z-index: 1;
+  position: relative;
+  width: $col-iphone-width;
+}
+
+.iphone,
+.app-copy {
+  display: inline-block;
+}
+
+.app-copy {
+  width: $col-app-width;
+  margin-right: $spacing-block * 2;
+  margin-top:  $spacing-block * 6;
+  vertical-align: top;
+
+  @include media(max-width 520px) {
+    width: 70%;
+    margin-right: 0;
+    margin-top: $spacing-block * 2;
+    text-align: center;
+  }
+
+  @include media(max-width 520px) {
+    width: 94%;
+  }
+}
+
+.app-store-badge {
+  display: inline-block;
+  margin: ($spacing-block * 2) 0 ($spacing-block * 3) 0;
+}
+
+.thoughtbot-built {
+  color: $thoughtbot-red;
+}
