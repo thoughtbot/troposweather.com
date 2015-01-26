@@ -4,7 +4,7 @@ $din-ultralight: 'DINNextLTPro-UltraLight';
 $body-font: $din-ultralight, "Helvetica";
 
 // Sizes
-$base-font-size: 28px;
+$base-font-size: 26px;
 $base-line-height: $base-font-size * 1.5;
 
 // Colors
@@ -21,6 +21,5 @@ $base-background-color: $black;
 // Padding
 $spacing-block: 20px;
 
-// Widths
-$col-app-width: 320px;
-$col-iphone-width: 306px;
+// Screen sizes
+$small-snap: 600px;

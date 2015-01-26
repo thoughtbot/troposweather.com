@@ -3,7 +3,7 @@
   width: 100%;
   bottom: 0;
 
-  @include media(max-width 768px) {
+  @include media(max-width $small-snap) {
     position: relative;
   }
 }

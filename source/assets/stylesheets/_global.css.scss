@@ -8,20 +8,37 @@
   @include flex(1);
   @include align-items(center);
   @include display(flex);
-  width: 700px;
+  width: 100%;
+  max-width: 750px;
   margin: 0 auto;
+  padding: 0 ($spacing-block * 2);
 
-  @include media(max-width 520px) {
+  @include media(max-width $small-snap) {
     @include flex(0);
+    display: inline-block;
     width: 100%;
     text-align: center;
   }
 }
 
 .iphone {
+  @include flex(none);
+  @include size(306px 640px);
   z-index: 1;
   position: relative;
-  width: $col-iphone-width;
+
+  @include media(max-width $small-snap) {
+    margin-bottom: $spacing-block * 2;
+  }
+}
+
+.app-icon {
+  margin-bottom: $spacing-block * 3;
+
+  @include media(max-width $small-snap) {
+    @include size(60px 60px);
+    margin-bottom:  $spacing-block;
+  }
 }
 
 .iphone,
@@ -30,20 +47,26 @@
 }
 
 .app-copy {
-  width: $col-app-width;
-  margin-right: $spacing-block * 2;
-  margin-top:  $spacing-block * 6;
-  vertical-align: top;
+  width: 330px;
+  margin-right: $spacing-block;
 
-  @include media(max-width 520px) {
+  @include media(max-width $small-snap) {
     width: 70%;
     margin-right: 0;
     margin-top: $spacing-block * 2;
-    text-align: center;
+    display: block;
   }
 
-  @include media(max-width 520px) {
-    width: 94%;
+  @include media(max-width $small-snap) {
+    width: 100%;
+  }
+}
+
+.built-by-text {
+  padding-top: $spacing-block *2;
+
+  @include media(max-width $small-snap) {
+    padding: $spacing-block 0;
   }
 }
 
