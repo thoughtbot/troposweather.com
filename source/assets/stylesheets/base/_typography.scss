@@ -1,5 +1,5 @@
-@font-face {font-family: 'DINNextLTPro-Light';src: url('../fonts/Din-Light.eot');src: url('../fonts/Din-Light.eot?#iefix') format('embedded-opentype'),url('../fonts/Din-Light.woff2') format('woff2'),url('../fonts/Din-Light.woff') format('woff'),url('../fonts/Din-Light.ttf') format('truetype');}
-@font-face {font-family: 'DINNextLTPro-Regular';src: url('../fonts/Din-Regular.eot');src: url('../fonts/Din-Regular.eot?#iefix') format('embedded-opentype'),url('../fonts/Din-Regular.woff2') format('woff2'),url('../fonts/Din-Regular.woff') format('woff'),url('../fonts/Din-Regular.ttf') format('truetype');}
+@font-face {font-family: 'DINNextLTPro-Light';src: font-path('Din-Light.eot');src: font-path('Din-Light.eot?#iefix') format('embedded-opentype'),font-path('Din-Light.woff2') format('woff2'),font-path('Din-Light.woff') format('woff'),font-path('Din-Light.ttf') format('truetype');}
+@font-face {font-family: 'DINNextLTPro-Regular';src: font-path('Din-Regular.eot');src: font-path('Din-Regular.eot?#iefix') format('embedded-opentype'),font-path('Din-Regular.woff2') format('woff2'),font-path('Din-Regular.woff') format('woff'),font-path('Din-Regular.ttf') format('truetype');}
 
 body {
   -webkit-font-smoothing: antialiased;
