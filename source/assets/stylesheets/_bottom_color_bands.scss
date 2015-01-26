@@ -6,6 +6,10 @@
   @include media(max-width $small-snap) {
     position: relative;
   }
+
+  @include media(max-height 600px) {
+    position: relative;
+  }
 }
 
 .color-row {
