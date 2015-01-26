@@ -1,4 +1,4 @@
-@font-face {font-family: 'DINNextLTPro-UltraLight';src: url('../fonts/Din-UltraLight.eot');src: url('../fonts/Din-UltraLight.eot?#iefix') format('embedded-opentype'),url('../fonts/Din-UltraLight.woff2') format('woff2'),url('../fonts/Din-UltraLight.woff') format('woff'),url('../fonts/Din-UltraLight.ttf') format('truetype');}
+@font-face {font-family: 'DINNextLTPro-Light';src: url('../fonts/Din-Light.eot');src: url('../fonts/Din-Light.eot?#iefix') format('embedded-opentype'),url('../fonts/Din-Light.woff2') format('woff2'),url('../fonts/Din-Light.woff') format('woff'),url('../fonts/Din-Light.ttf') format('truetype');}
 @font-face {font-family: 'DINNextLTPro-Regular';src: url('../fonts/Din-Regular.eot');src: url('../fonts/Din-Regular.eot?#iefix') format('embedded-opentype'),url('../fonts/Din-Regular.woff2') format('woff2'),url('../fonts/Din-Regular.woff') format('woff'),url('../fonts/Din-Regular.ttf') format('truetype');}
 
 body {
@@ -24,6 +24,7 @@ p {
   font-size: 30px;
   line-height: 1.2;
   margin: 0 0 $spacing-block 0;
+  color: #e4e4e4;
 
   &.small-text {
     font-size: 18px;
