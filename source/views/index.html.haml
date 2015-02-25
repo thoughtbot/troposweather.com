@@ -5,20 +5,23 @@ title: Tropos&#58; Phrase based weather conditions
 .container
   .page-content
     .app-copy
-
-      = image_tag 'icon.png', :height => '40', :width => '40', :class => 'app-icon'
+      = image_tag "icon.png", height: "40", width: "40", class: "app-icon"
 
       %h1 Tropos
       %p How's the weather compared to yesterday?
 
       %p Coming soon.
 
-      / = link_to image_tag('app-store-badge.svg'), 'http://when-it-gets-approved-booyah.net.com.apple.io', :class => "app-store-badge"
+      / = link_to image_tag("app-store-badge.svg"), "http://when-it-gets-approved-booyah.net.com.apple.io", class: "app-store-badge"
+      -# - content_for :analytics do
+      -#   :javascript
+      -#     var link = document.getElementsByClassName("app-store-badge")[0];
+      -#     window.analytics.trackLink(link, "Clicked App Store Badge");
 
       %p.small-text.built-by-text
         Built by
-        = link_to 'thoughtbot, inc.', 'http://thoughtbot.com', :class => 'thoughtbot-built'
+        = link_to "thoughtbot, inc.", "http://thoughtbot.com", class: "thoughtbot-built"
 
-    = image_tag 'iphone.png', :class => 'iphone'
+    = image_tag "iphone.png", class: "iphone"
 
-  = partial 'bottom_color_bands'
+  = partial "bottom_color_bands"

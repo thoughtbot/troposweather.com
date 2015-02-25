@@ -1,22 +1,59 @@
 # Tropos-Web
 
 ## About
-This is the landing/marketing page for [Tropos iOS](https://github.com/thoughtbot/CarlWeathers) app. The site is built on top of middleman which was generated using [Proteus](https://github.com/thoughtbot/proteus).
 
-Getting Started
----------------
+This is the landing page for [Tropos].
+It is a Middleman app.
 
-Install dependencies:
+[Tropos]: http://troposweather.com/
+
+The [iOS source code] is in another repo.
+
+[iOS source code]: https://github.com/thoughtbot/Tropos
+
+## Workflow
+
+Set up:
+
 ```
-bundle install
+./bin/setup
 ```
 
-Run the server
+Run the server:
+
 ```
-middleman
+foreman start
 ```
 
-Deploy to Github Pages
+See it in the web browser:
+
 ```
-middleman deploy
+open http://localhost:5000
 ```
+
+Deploy to GitHub Pages:
+
+```
+./bin/deploy
+```
+
+## Analytics
+
+We use Segment.com for analytics.
+
+See analytics in
+the [thoughtbot/tropos] project.
+
+[thoughtbot/tropos]: https://segment.com/thoughtbot/tropos/debugger
+
+If you want to test analytics:
+
+```
+echo "SEGMENT_KEY=7h5gcFr2gr" > .env
+```
+
+Then, restart Foreman and
+the view the analytics changes
+in the [thoughtbot/testing] Segment project.
+
+[thoughtbot/testing]: https://segment.com/thoughtbot/testing/debugger

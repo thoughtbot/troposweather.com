@@ -1,9 +1,8 @@
-# If you have OpenSSL installed, we recommend updating
-# the following line to use "https"
 source "http://rubygems.org"
 
-gem "middleman"
-gem "middleman-livereload"
-gem "middleman-deploy"
+ruby "2.2.0"
+
 gem "bourbon"
+gem "middleman"
+gem "middleman-deploy"
 gem "neat"
