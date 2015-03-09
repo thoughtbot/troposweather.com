@@ -2,14 +2,12 @@
 
 # Run this script immediately after cloning the codebase.
 
-# Make sure Bundler is installed
-if [ `gem query -i -n bundler` = "false" ]; then
-  echo -e "Installing Bundler..."
-  gem install bundler
-fi
+# Exit if any subcommand fails
+set -e
 
-# Set up Ruby dependencies via Bundler
-echo -e "Installing Dependencies..."
+# Set up Ruby dependencies
+gem install bundler --conservative
 bundle check || bundle install
 
+# Add binstubs to PATH via export PATH=".git/safe/../../bin:$PATH" in ~/.zshenv
 mkdir -p .git/safe

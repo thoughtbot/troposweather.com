@@ -8,7 +8,7 @@ title: Tropos&#58; Phrase based weather conditions
       = image_tag "icon.png", height: "40", width: "40", class: "app-icon"
 
       %h1 Tropos
-      %p How's the weather compared to yesterday?
+      %p No dew points or ads. Only weather information you can act on.
 
       %p Coming soon.
 
@@ -18,9 +18,15 @@ title: Tropos&#58; Phrase based weather conditions
       -#     var link = document.getElementsByClassName("app-store-badge")[0];
       -#     window.analytics.trackLink(link, "Clicked App Store Badge");
 
+      %form(accept-charset="UTF-8" action="https://formkeep.com/f/c9ddd77ed322" method="POST")
+        %input(type="hidden" name="utf8" value="✓")
+        %input(type="email" name="email" placeholder="Enter your email to" required="true")
+        %button(type="submit")
+          get early access.
+
       %p.small-text.built-by-text
         Built by
-        = link_to "thoughtbot, inc.", "http://thoughtbot.com", class: "thoughtbot-built"
+        = link_to "thoughtbot, inc.", "https://thoughtbot.com", class: "thoughtbot-built"
 
     = image_tag "iphone.png", class: "iphone"
 

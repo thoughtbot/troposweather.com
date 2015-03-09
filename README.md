@@ -1,7 +1,5 @@
 # Tropos-Web
 
-## About
-
 This is the landing page for [Tropos].
 It is a Middleman app.
 
@@ -15,25 +13,25 @@ The [iOS source code] is in another repo.
 
 Set up:
 
-```
+```bash
 ./bin/setup
 ```
 
 Run the server:
 
-```
+```bash
 foreman start
 ```
 
 See it in the web browser:
 
-```
+```bash
 open http://localhost:5000
 ```
 
 Deploy to GitHub Pages:
 
-```
+```bash
 ./bin/deploy
 ```
 

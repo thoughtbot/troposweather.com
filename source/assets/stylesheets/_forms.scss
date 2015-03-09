@@ -1,0 +1,30 @@
+input,
+button {
+  border-radius: $base-border-radius;
+  height: 32px;
+}
+
+input {
+  background-color: transparent;
+  border: 1px solid lighten($black, 10%);
+  padding: 12px 10px;
+
+  &:focus {
+    border-color: lighten($black, 20%);
+    outline: none;
+  }
+}
+
+button {
+  margin-top: $spacing-block;
+  background-color: $blue;
+  border: none;
+
+  &:hover {
+    background-color: lighten($blue, 5%);
+  }
+
+  &:active {
+    background-color: lighten($blue, 8%);
+  }
+}

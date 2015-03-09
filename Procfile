@@ -1,1 +1,1 @@
-web: middleman server --port=$PORT
+web: bundle exec middleman server --port=$PORT
