@@ -1,15 +1,6 @@
 .bottom-color-bands {
-  position: absolute;
+  @include align-self(flex-end);
   width: 100%;
-  bottom: 0;
-
-  @include media(max-width $small-snap) {
-    position: relative;
-  }
-
-  @include media(max-height 600px) {
-    position: relative;
-  }
 }
 
 .color-row {

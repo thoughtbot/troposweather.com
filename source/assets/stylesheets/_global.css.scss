@@ -28,8 +28,8 @@
   z-index: 1;
   position: relative;
 
-  @include media(max-width $small-snap) {
-    margin-bottom: $spacing-block * 2;
+  @include media(max-height 550px) {
+    margin: ($spacing-block * 2) 0;
   }
 }
 
