@@ -7,9 +7,11 @@ button {
 input {
   background-color: transparent;
   border: 1px solid lighten($black, 10%);
-  padding: 12px 10px;
+  padding-left: 10px;
+  width: 160px;
 
-  &:focus {
+  &:focus,
+  &:hover {
     border-color: lighten($black, 20%);
     outline: none;
   }
@@ -18,7 +20,7 @@ input {
 button {
   background-color: $blue;
   border: none;
-  margin-top: $spacing-block;
+  margin-left: $spacing-block / 2;
 
   &:hover {
     background-color: lighten($blue, 5%);
