@@ -25,11 +25,10 @@ p {
   font-size: 27px;
   line-height: 1.2;
   margin: 0 0 $spacing-block 0;
-  color: #e4e4e4;
 
   &.small-text {
-    font-size: 18px;
     font-family: $din-regular;
+    font-size: 18px;
   }
 }
 

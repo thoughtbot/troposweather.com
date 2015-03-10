@@ -16,9 +16,9 @@ input {
 }
 
 button {
-  margin-top: $spacing-block;
   background-color: $blue;
   border: none;
+  margin-top: $spacing-block;
 
   &:hover {
     background-color: lighten($blue, 5%);
