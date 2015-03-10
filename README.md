@@ -20,7 +20,7 @@ Set up:
 Run the server:
 
 ```bash
-foreman start
+./bin/server
 ```
 
 See it in the web browser:
@@ -29,11 +29,7 @@ See it in the web browser:
 open http://localhost:5000
 ```
 
-Deploy to GitHub Pages:
-
-```bash
-./bin/deploy
-```
+Deploy by pushing to the GitHub repo's `master` branch.
 
 ## Analytics
 

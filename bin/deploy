@@ -1,4 +1,0 @@
-#!/usr/bin/env sh
-
-# Deploy using Middleman-deploy
-SEGMENT_KEY=AKpyG9BnMfDYgc17B6bJTEGoVR5UxPdo bundle exec middleman deploy
