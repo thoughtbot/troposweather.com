@@ -23,12 +23,6 @@ Run the server:
 ./bin/server
 ```
 
-See it in the web browser:
-
-```bash
-open http://localhost:5000
-```
-
 Deploy by pushing to the GitHub repo's `master` branch.
 
 ## Analytics
