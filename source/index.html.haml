@@ -8,19 +8,7 @@
         No dew points or ads.
         %br Only weather information you can act on.
 
-      %p Coming soon.
-
-      / = link_to image_tag("app-store-badge.svg"), "http://when-it-gets-approved-booyah.net.com.apple.io", class: "app-store-badge"
-      -# - content_for :analytics do
-      -#   :javascript
-      -#     var link = document.getElementsByClassName("app-store-badge")[0];
-      -#     window.analytics.trackLink(link, "Clicked App Store Badge");
-
-      %form(accept-charset="UTF-8" action="https://formkeep.com/f/c9ddd77ed322" method="POST")
-        %input(type="hidden" name="utf8" value="✓")
-        %input(type="email" name="email" placeholder="Enter your email to" required="true")
-        %button(type="submit")
-          be the first to get it.
+      = link_to image_tag("app-store-badge.svg"), "https://itunes.apple.com/us/app/tropos-weather-forecasts-for/id955209376", class: "app-store-badge"
 
       %p.small-text.built-by-text
         Built by
