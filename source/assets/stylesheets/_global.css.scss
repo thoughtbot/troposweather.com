@@ -39,6 +39,11 @@
 .iphone {
   @include size(306px 627px);
   margin: ($spacing-block * 2) 0;
+
+  @include media(max-width $small-snap) {
+    @include size(50% auto);
+    margin-top: 0;
+  }
 }
 
 .app-copy {
@@ -63,6 +68,10 @@
 .app-store-badge {
   display: inline-block;
   margin: ($spacing-block * 2) 0 ($spacing-block * 3) 0;
+
+  @include media(max-width $small-snap) {
+    margin: $spacing-block 0;
+  }
 }
 
 a {
