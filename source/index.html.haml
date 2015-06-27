@@ -8,7 +8,9 @@
         No dew points or ads.
         %br Only weather information you can act on.
 
-      = link_to image_tag("app-store-badge.svg"), "https://itunes.apple.com/us/app/tropos-weather-forecasts-for/id955209376", class: "app-store-badge"
+      .badges
+        = link_to image_tag("app-store-badge.svg"), "https://itunes.apple.com/us/app/tropos-weather-forecasts-for/id955209376", class: "app-store-badge"
+        %iframe.github-star{src: "https://ghbtns.com/github-btn.html?user=thoughtbot&repo=Tropos&type=star&count=true&size=small", frameborder: "0", scrolling: "0"}
 
       %p.small-text.built-by-text
         Built by
