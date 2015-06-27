@@ -62,9 +62,30 @@
 
 .app-store-badge {
   display: inline-block;
-  margin: ($spacing-block * 2) 0 ($spacing-block * 3) 0;
+  margin: ($spacing-block * 2) 0 $spacing-block 0;
 }
 
 a {
   color: $thoughtbot-red;
+}
+
+.github-banner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+}
+
+.github-star {
+  display: block;
+  height: $spacing-block;
+  width: $spacing-block * 4.5;
+
+  @include media(max-width $small-snap) {
+    margin: auto;
+  }
+}
+
+.badges {
+  margin-bottom: $spacing-block * 3;
 }
