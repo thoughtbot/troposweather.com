@@ -10,7 +10,7 @@
       Tropos&#58; Phrase based weather conditions
     = stylesheet_link_tag "application"
 
-  %body{class: page_classes}
+  %body
     = yield
 
     - if ENV["SEGMENT_KEY"]
