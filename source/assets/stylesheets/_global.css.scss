@@ -23,6 +23,7 @@
 
 .app-icon {
   margin-bottom: $spacing-block * 3;
+  max-width: 40px;
 
   @include media(max-width $small-snap) {
     @include size(60px 60px);
