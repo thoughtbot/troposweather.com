@@ -1,13 +1,11 @@
-# Tropos-Web
+# Tropos Website
 
-This is the landing page for [Tropos].
-It is a Middleman app.
+This is the website for the [Tropos] iOS app, which runs on Middleman.
 
-[Tropos]: http://troposweather.com/
+You can find the [iOS source code in another repo][source-code].
 
-The [iOS source code] is in another repo.
-
-[iOS source code]: https://github.com/thoughtbot/Tropos
+[Tropos]: http://troposweather.com
+[source-code]: https://github.com/thoughtbot/Tropos
 
 ## Workflow
 
@@ -27,10 +25,10 @@ Deploy by pushing to the GitHub repo's `master` branch.
 
 ## Analytics
 
-We use Segment.com for analytics.
+We use Segment for analytics.
 
 See analytics in
-the [thoughtbot/tropos] project.
+the [thoughtbot/tropos] Segment project.
 
 [thoughtbot/tropos]: https://segment.com/thoughtbot/tropos/debugger
 
