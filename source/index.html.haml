@@ -8,7 +8,8 @@
         No dew points or ads.
         %br Only weather information you can act on.
 
-      = link_to image_tag("app-store-badge.svg"), "https://itunes.apple.com/us/app/tropos-weather-forecasts-for/id955209376", class: "app-store-badge"
+      = link_to "https://itunes.apple.com/us/app/tropos-weather-forecasts-for/id955209376", class: "app-store-link" do
+        = inline_svg "app-store-badge.svg"
 
       %p.small-text.built-by-text
         Built by
