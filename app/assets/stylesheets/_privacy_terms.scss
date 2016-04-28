@@ -1,0 +1,22 @@
+.privacy-terms {
+  margin: $spacing-block * 3 auto;
+  max-width: 550px;
+
+  h2,
+  h3 {
+    margin-bottom: $spacing-block;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  ul {
+    margin: 1em 0;
+    padding: 0 0 0 40px;
+  }
+
+  li {
+    list-style-type: initial;
+  }
+}

@@ -1,1 +1,13 @@
-tmp/
+!.keep
+*.DS_Store
+*.swo
+*.swp
+/.bundle
+/.env.local
+/coverage/*
+/db/*.sqlite3
+/log/*
+/public/system
+/public/assets
+/tags
+/tmp/*

@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "din-next-light";
+  src: font_url("Din-Light.eot");
+  src: font_url("Din-Light.eot?#iefix") format("embedded-opentype"),
+       font_url("Din-Light.woff2") format("woff2"),
+       font_url("Din-Light.woff") format("woff"),
+       font_url("Din-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "din-next-regular";
+  src: font_url("Din-Regular.eot");
+  src: font_url("Din-Regular.eot?#iefix") format("embedded-opentype"),
+       font_url("Din-Regular.woff2") format("woff2"),
+       font_url("Din-Regular.woff") format("woff"),
+       font_url("Din-Regular.ttf") format("truetype");
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  background-color: $base-background-color;
+  font-family: $body-font;
+  color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  text-rendering: optimizeLegibility;
+  font-family: $din-regular;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 52px;
+  margin-bottom: $spacing-block;
+}
+
+p {
+  color: #e4e4e4;
+  font-size: 27px;
+  line-height: 1.2;
+  margin: 0 0 $spacing-block 0;
+
+  &.small-text {
+    font-family: $din-regular;
+    font-size: 18px;
+  }
+}
+
+a {
+  color: $red;
+  text-decoration: none;
+}
+
+hr {
+  border-bottom: $base-border;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: $base-spacing 0;
+}

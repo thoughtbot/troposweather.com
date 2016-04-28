@@ -1,0 +1,19 @@
+.container
+  .page-content
+    .app-copy
+      = inline_svg "tropos-app-icon.svg", class: "app-icon"
+
+      %h1 Tropos
+      %p
+        No dew points or ads.
+        %br/
+        Only weather information you can&nbsp;act&nbsp;on.
+
+      = link_to "https://itunes.apple.com/us/app/tropos-weather-forecasts-for/id955209376", class: "app-store-link" do
+        = inline_svg "app-store-badge.svg"
+
+      %p.small-text.built-by-text
+        Built by
+        = link_to "thoughtbot, inc.", "https://thoughtbot.com", class: "thoughtbot-built"
+
+    = image_tag "tropos-iphone-app.png", class: "iphone", alt: "iPhone with the Tropos app open"

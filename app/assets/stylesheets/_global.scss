@@ -1,0 +1,74 @@
+.container {
+  $stripe-height: 32px;
+  box-shadow:
+    inset 0 ($stripe-height * -1) 0 0 $light-blue,
+    inset 0 ($stripe-height * -2) 0 0 $blue,
+    inset 0 ($stripe-height * -3) 0 0 $orange,
+    inset 0 ($stripe-height * -4) 0 0 $red;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-bottom: $stripe-height * 4;
+}
+
+.page-content {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  margin: 0 auto;
+  max-width: 750px;
+  padding: 0 ($spacing-block * 2);
+  width: 100%;
+
+  @include media(max-width $small-snap) {
+    display: inline-block;
+    padding: 0 $spacing-block;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.app-icon {
+  margin-bottom: $spacing-block * 3;
+  max-width: 40px;
+
+  @include media(max-width $small-snap) {
+    @include size(60px, 60px);
+    margin-bottom:  $spacing-block;
+  }
+}
+
+.iphone,
+.app-copy {
+  flex: none;
+  display: inline-block;
+}
+
+.iphone {
+  @include size(306px, 627px);
+  margin: ($spacing-block * 2) 0;
+}
+
+.app-copy {
+  margin-right: $spacing-block;
+  width: 330px;
+
+  @include media(max-width $small-snap) {
+    margin-right: 0;
+    margin-top: $spacing-block * 2;
+    width: 100%;
+  }
+}
+
+.built-by-text {
+  padding-top: $spacing-block * 2;
+
+  @include media(max-width $small-snap) {
+    padding: $spacing-block 0;
+  }
+}
+
+.app-store-link {
+  display: inline-block;
+  margin: ($spacing-block * 2) 0 ($spacing-block * 3);
+}
