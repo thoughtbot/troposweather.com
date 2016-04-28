@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/thoughtbot/courier-gem.git
+  revision: cdec6427aed6506f3fbcd33e6412cce78ec16752
+  specs:
+    courier (0.1.0)
+      activesupport (~> 4.2)
+      faraday_middleware (~> 0.8)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -36,8 +44,13 @@ GEM
       sass (>= 3.3.0, < 3.5)
     compass-import-once (1.0.5)
       sass (>= 3.2, < 3.5)
+    diff-lcs (1.2.5)
     erubis (2.7.0)
     execjs (2.6.0)
+    faraday (0.9.2)
+      multipart-post (>= 1.2, < 3)
+    faraday_middleware (0.10.0)
+      faraday (>= 0.7.4, < 0.10)
     ffi (1.9.10)
     git-version-bump (0.15.1)
     haml (4.0.7)
@@ -88,6 +101,7 @@ GEM
     mini_portile (0.6.2)
     minitest (5.8.3)
     multi_json (1.11.2)
+    multipart-post (2.0.0)
     neat (1.7.2)
       bourbon (>= 4.0)
       sass (>= 3.3)
@@ -109,6 +123,19 @@ GEM
     rb-fsevent (0.9.6)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
+    rspec (3.4.0)
+      rspec-core (~> 3.4.0)
+      rspec-expectations (~> 3.4.0)
+      rspec-mocks (~> 3.4.0)
+    rspec-core (3.4.4)
+      rspec-support (~> 3.4.0)
+    rspec-expectations (3.4.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.4.0)
+    rspec-mocks (3.4.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.4.0)
+    rspec-support (3.4.1)
     sass (3.4.19)
     sprockets (2.12.4)
       hike (~> 1.2)
@@ -123,6 +150,7 @@ GEM
     thor (0.19.1)
     thread_safe (0.3.5)
     tilt (1.4.1)
+    timecop (0.8.1)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
     uber (0.0.15)
@@ -137,12 +165,15 @@ PLATFORMS
 
 DEPENDENCIES
   bourbon
+  courier!
   middleman (~> 3.4)
   middleman-autoprefixer
   neat
   nokogiri
   rack-contrib
   rake
+  rspec
+  timecop
 
 BUNDLED WITH
    1.10.6

@@ -9,3 +9,9 @@ gem "neat"
 gem "nokogiri"
 gem "rack-contrib"
 gem "rake"
+gem "courier", git: "https://github.com/thoughtbot/courier-gem.git"
+
+group :development, :test do
+  gem "rspec"
+  gem "timecop"
+end
