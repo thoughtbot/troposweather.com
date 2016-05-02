@@ -1,3 +1,5 @@
+require "bundler/setup"
+Bundler.require(:broadcast)
 require "active_support/time"
 require "logger"
 

@@ -1,7 +1,7 @@
 require "active_support/time"
 require "courier"
 require "timecop"
-require_relative "../bin/send_broadcast"
+require_relative "../lib/send_broadcast"
 
 Timecop.safe_mode = true
 
