@@ -47,7 +47,10 @@ class SendBroadcast
 
 
   def courier
-    @courier ||= Courier::Client.new(api_token: ENV["COURIER_API_TOKEN"])
+    @courier ||= Courier::Client.new(
+      api_token: ENV["COURIER_API_TOKEN"],
+      environment: ENV.fetch("COURIER_ENVIRONMENT", :production)
+    )
   end
 
   def current_utc_time
