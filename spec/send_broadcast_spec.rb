@@ -17,7 +17,7 @@ RSpec.describe SendBroadcast do
         SendBroadcast.new.perform
 
         expect(courier).to have_received(:broadcast).
-          with("Europe/Amsterdam", { content_available: 1 })
+          with("Europe/Amsterdam", { "content-available": 1 })
       end
     end
 
@@ -31,7 +31,7 @@ RSpec.describe SendBroadcast do
         SendBroadcast.new.perform
 
         expect(courier).to have_received(:broadcast).
-          with("Europe/Amsterdam", { content_available: 1 })
+          with("Europe/Amsterdam", { "content-available": 1 })
       end
     end
 
@@ -45,7 +45,7 @@ RSpec.describe SendBroadcast do
         SendBroadcast.new.perform
 
         expect(courier).to_not have_received(:broadcast).
-          with("Europe/Amsterdam", { content_available: 1 })
+          with("Europe/Amsterdam", { "content-available": 1 })
       end
     end
 
@@ -59,7 +59,7 @@ RSpec.describe SendBroadcast do
         SendBroadcast.new.perform
 
         expect(courier).to have_received(:broadcast).
-          with("Europe/Amsterdam", { content_available: 1 })
+          with("Europe/Amsterdam", { "content-available": 1 })
       end
     end
 
@@ -73,7 +73,7 @@ RSpec.describe SendBroadcast do
         SendBroadcast.new.perform
 
         expect(courier).to_not have_received(:broadcast).
-          with("Europe/Amsterdam", { content_available: 1 })
+          with("Europe/Amsterdam", { "content-available": 1 })
       end
     end
   end

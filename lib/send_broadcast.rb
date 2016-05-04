@@ -27,7 +27,7 @@ class SendBroadcast
   end
 
   def broadcast(time_zone)
-    courier.broadcast(time_zone_identifier(time_zone), { content_available: 1 })
+    courier.broadcast(time_zone_identifier(time_zone), { "content-available": 1 })
   end
 
   def time_zone_identifier(time_zone)
