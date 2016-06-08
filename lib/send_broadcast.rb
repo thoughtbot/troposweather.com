@@ -7,10 +7,17 @@ class SendBroadcast
   Morning = "09:00:00".freeze
 
   def perform
-    time_zones_where_it_is(Morning).each do |time_zone|
-      logger.info "broadcast to: #{time_zone_identifier(time_zone)}"
-      broadcast(time_zone)
+    time_zones_where_it_is(Morning).map do |time_zone|
+      time_zone_identifier(time_zone)
+    end.uniq.each do |channel|
+      broadcast(channel)
     end
+  end
+
+  def time_zone_identifier(time_zone)
+    offset = time_zone.tzinfo.current_period.utc_total_offset
+    ActiveSupport::TimeZone.seconds_to_utc_offset(offset, false)
+      .sub("+", "plus ").sub("-", "minus ").parameterize
   end
 
   private
@@ -26,13 +33,9 @@ class SendBroadcast
     end
   end
 
-  def broadcast(time_zone)
-    courier.broadcast(time_zone_identifier(time_zone), { "content-available": 1 })
-  end
-
-  def time_zone_identifier(time_zone)
-    tzinfo = ActiveSupport::TimeZone.find_tzinfo(time_zone.name)
-    tzinfo.canonical_identifier
+  def broadcast(channel)
+    logger.info "broadcast to: #{channel}"
+    courier.broadcast(channel, { "content-available": 1 })
   end
 
   def logger
