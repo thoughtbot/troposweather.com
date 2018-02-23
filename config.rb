@@ -5,6 +5,7 @@ set :images_dir, "assets/images"
 set :layout, "layouts/application"
 
 activate :directory_indexes
+activate :sprockets
 
 activate :autoprefixer do |config|
   config.browsers = ["last 2 versions"]

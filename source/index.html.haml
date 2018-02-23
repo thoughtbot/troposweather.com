@@ -1,7 +1,7 @@
 .container
   .page-content
     .app-copy
-      = inline_svg "tropos-app-icon.svg", class: "app-icon"
+      = svg "tropos-app-icon"
 
       %h1 Tropos
       %p
@@ -10,7 +10,7 @@
         Only weather information you can&nbsp;act&nbsp;on.
 
       = link_to "https://itunes.apple.com/us/app/tropos-weather-forecasts-for/id955209376", class: "app-store-link" do
-        = inline_svg "app-store-badge.svg"
+        = svg "app-store-badge"
 
       = link_to "https://play.google.com/store/apps/details?id=com.thoughtbot.tropos", class: "app-store-link" do
         = image_tag "google-play-badge.png"
