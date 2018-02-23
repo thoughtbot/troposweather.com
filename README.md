@@ -39,15 +39,3 @@ See analytics in
 the [thoughtbot/tropos] Segment project.
 
 [thoughtbot/tropos]: https://app.segment.com/thoughtbot/sources/tropos/overview
-
-If you want to test analytics:
-
-```
-echo "SEGMENT_KEY=7h5gcFr2gr" > .env
-```
-
-Then, restart Foreman and
-the view the analytics changes
-in the [thoughtbot/testing] Segment project.
-
-[thoughtbot/testing]: https://segment.com/thoughtbot/testing/debugger
