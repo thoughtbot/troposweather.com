@@ -11,19 +11,23 @@ and the Android app at [`thoughtbot/tropos-android`][android-repo].
 [ios-repo]: https://github.com/thoughtbot/Tropos
 [android-repo]: https://github.com/thoughtbot/tropos-android
 
-## Workflow
+## Setup
 
-Set up:
+1. Set up your machine:
 
-```bash
-./bin/setup
-```
+    ```bash
+    bin/setup
+    ```
 
-Run the server:
+1. Run the app:
 
-```bash
-./bin/server
-```
+    ```
+    bundle exec middleman
+    ```
+
+    ```
+    open http://localhost:4567
+    ```
 
 Deploy by pushing to the GitHub repo's `master` branch.
 
