@@ -1,19 +1,11 @@
 @font-face {
   font-family: "din-next-light";
-  src: font_url("Din-Light.eot");
-  src: font_url("Din-Light.eot?#iefix") format("embedded-opentype"),
-       font_url("Din-Light.woff2") format("woff2"),
-       font_url("Din-Light.woff") format("woff"),
-       font_url("Din-Light.ttf") format("truetype");
+  src: font_url("Din-Light.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "din-next-regular";
-  src: font_url("Din-Regular.eot");
-  src: font_url("Din-Regular.eot?#iefix") format("embedded-opentype"),
-       font_url("Din-Regular.woff2") format("woff2"),
-       font_url("Din-Regular.woff") format("woff"),
-       font_url("Din-Regular.ttf") format("truetype");
+  src: font_url("Din-Regular.woff2") format("woff2");
 }
 
 body {
