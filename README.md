@@ -1,11 +1,15 @@
 # Tropos Website
 
-This is the website for the [Tropos] iOS app, which runs on Middleman.
+This is the source code for the [Tropos website][tropos-website]. It's built
+with [Middleman][middleman].
 
-You can find the [iOS source code in another repo][source-code].
+You can find the source code for the iOS app at [`thoughtbot/Tropos`][ios-repo]
+and the Android app at [`thoughtbot/tropos-android`][android-repo].
 
-[Tropos]: http://troposweather.com
-[source-code]: https://github.com/thoughtbot/Tropos
+[tropos-website]: http://troposweather.com
+[middleman]: https://middlemanapp.com/
+[ios-repo]: https://github.com/thoughtbot/Tropos
+[android-repo]: https://github.com/thoughtbot/tropos-android
 
 ## Workflow
 
