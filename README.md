@@ -30,7 +30,7 @@ We use Segment for analytics.
 See analytics in
 the [thoughtbot/tropos] Segment project.
 
-[thoughtbot/tropos]: https://segment.com/thoughtbot/tropos/debugger
+[thoughtbot/tropos]: https://app.segment.com/thoughtbot/sources/tropos/overview
 
 If you want to test analytics:
 
