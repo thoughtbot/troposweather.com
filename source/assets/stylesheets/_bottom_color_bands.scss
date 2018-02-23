@@ -1,10 +1,10 @@
 .bottom-color-bands {
-  @include align-self(flex-end);
+  align-self: flex-end;
   width: 100%;
 }
 
 .color-row {
-  @include size(100% 32px);
+  @include size(100%, 32px);
 }
 
 $color-names: "red", "orange", "blue", "light-blue";

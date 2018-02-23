@@ -12,9 +12,9 @@
 }
 
 .page-content {
-  @include align-items(center);
-  @include display(flex);
-  @include flex(1);
+  align-items: center;
+  display: flex;
+  flex: 1;
   margin: 0 auto;
   max-width: 750px;
   padding: 0 ($spacing-block * 2);
@@ -33,19 +33,19 @@
   max-width: 40px;
 
   @include media(max-width $small-snap) {
-    @include size(60px 60px);
+    @include size(60px);
     margin-bottom:  $spacing-block;
   }
 }
 
 .iphone,
 .app-copy {
-  @include flex(none);
   display: inline-block;
+  flex: none;
 }
 
 .iphone {
-  @include size(306px 627px);
+  @include size(306px, 627px);
   margin: ($spacing-block * 2) 0;
 }
 
