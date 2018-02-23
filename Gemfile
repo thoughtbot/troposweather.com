@@ -6,7 +6,6 @@ gem "bourbon", "~> 5.0"
 gem "middleman", "~> 4.2"
 gem "middleman-autoprefixer"
 gem "neat", "~> 1.9"
-gem "nokogiri"
 gem "rack-contrib"
 gem "rake"
 
