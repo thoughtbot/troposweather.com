@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 ruby "2.2.3"
 
-gem "bourbon"
+gem "bourbon", "~> 4.3"
 gem "middleman", "~> 3.4"
 gem "middleman-autoprefixer"
 gem "neat"
