@@ -2,3 +2,13 @@
 @import 'typography';
 @import '../bottom_color_bands';
 @import '../forms';
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
