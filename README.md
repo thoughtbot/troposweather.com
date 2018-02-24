@@ -29,6 +29,13 @@ and the Android app at [`thoughtbot/tropos-android`][android-repo].
     open http://localhost:4567
     ```
 
+## Deployment
+
+This website is deployed on [Netlify][netlify]. Trigger a deploy by pushing to
+the `master` branch on GitHub.
+
+[netlify]: https://www.netlify.com/
+
 ## Analytics
 
 We use Segment for analytics.
