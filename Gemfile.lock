@@ -148,6 +148,7 @@ DEPENDENCIES
   rack-contrib
   rake
   rspec
+  sass (~> 3.4)
   timecop
 
 RUBY VERSION

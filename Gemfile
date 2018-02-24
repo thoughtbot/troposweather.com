@@ -7,6 +7,7 @@ gem "middleman", "~> 4.2"
 gem "middleman-autoprefixer"
 gem "rack-contrib"
 gem "rake"
+gem "sass", "~> 3.4"
 
 group :broadcast do
   gem "courier", git: "https://github.com/thoughtbot/courier-gem.git"
