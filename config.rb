@@ -14,4 +14,5 @@ end
 configure :build do
   activate :asset_hash
   activate :minify_css
+  activate :minify_html
 end
