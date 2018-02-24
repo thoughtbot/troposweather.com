@@ -9,13 +9,3 @@ gem "middleman-minify-html"
 gem "rack-contrib"
 gem "rake"
 gem "sass", "~> 3.4"
-
-group :broadcast do
-  gem "courier", git: "https://github.com/thoughtbot/courier-gem.git"
-  gem "clockwork"
-end
-
-group :development, :test do
-  gem "rspec"
-  gem "timecop"
-end
