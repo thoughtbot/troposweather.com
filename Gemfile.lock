@@ -92,9 +92,6 @@ GEM
     parallel (1.12.1)
     public_suffix (3.0.2)
     rack (1.6.8)
-    rack-contrib (1.8.0)
-      rack (~> 1.4)
-    rake (12.3.0)
     rb-fsevent (0.10.2)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
@@ -117,8 +114,6 @@ DEPENDENCIES
   middleman (~> 4.2)
   middleman-autoprefixer
   middleman-minify-html
-  rack-contrib
-  rake
   sass (~> 3.4)
 
 RUBY VERSION

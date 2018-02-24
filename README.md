@@ -29,8 +29,6 @@ and the Android app at [`thoughtbot/tropos-android`][android-repo].
     open http://localhost:4567
     ```
 
-Deploy by pushing to the GitHub repo's `master` branch.
-
 ## Analytics
 
 We use Segment for analytics.
