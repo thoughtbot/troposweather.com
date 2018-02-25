@@ -4,7 +4,6 @@ set :images_dir, "assets/images"
 set :layout, "layouts/application"
 
 activate :autoprefixer
-activate :directory_indexes
 
 configure :production do
   activate :asset_hash
