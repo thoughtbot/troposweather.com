@@ -33,8 +33,9 @@
   max-width: 40px;
 
   @media (max-width: $small-snap) {
-    @include size(60px);
+    height: 60px;
     margin-bottom:  $spacing-block;
+    width: 60px;
   }
 }
 
@@ -45,8 +46,9 @@
 }
 
 .iphone {
-  @include size(306px, 627px);
+  height: 627px;
   margin: ($spacing-block * 2) 0;
+  width: 306px;
 }
 
 .app-copy {
