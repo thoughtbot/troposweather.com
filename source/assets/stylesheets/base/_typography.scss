@@ -9,17 +9,19 @@
 }
 
 body {
-  -webkit-font-smoothing: antialiased;
   background-color: $base-background-color;
+  color: #fff;
   font-family: $body-font;
-  color: white;
+  -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  text-rendering: optimizeLegibility;
+h1,
+h2,
+h3 {
   font-family: $din-regular;
   font-weight: normal;
+  margin: 0;
+  text-rendering: optimizeLegibility;
 }
 
 h1 {
@@ -31,15 +33,15 @@ p {
   color: #e4e4e4;
   font-size: 27px;
   line-height: 1.2;
-  margin: 0 0 $spacing-block 0;
-
-  &.small-text {
-    font-family: $din-regular;
-    font-size: 18px;
-  }
+  margin: 0 0 $spacing-block;
 }
 
 a {
   color: $red;
   text-decoration: none;
+}
+
+.small-text {
+  font-family: $din-regular;
+  font-size: 18px;
 }
