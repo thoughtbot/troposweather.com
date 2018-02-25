@@ -6,7 +6,7 @@ set :layout, "layouts/application"
 activate :autoprefixer
 activate :directory_indexes
 
-configure :build do
+configure :production do
   activate :asset_hash
   activate :gzip
   activate :minify_css
