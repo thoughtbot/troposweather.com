@@ -1,4 +1,4 @@
-# Tropos Website
+# troposweather.com
 
 This is the source code for the [Tropos website][tropos-website]. It's built
 with [Middleman][middleman].
