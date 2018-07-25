@@ -4,6 +4,7 @@ set :images_dir, "assets/images"
 set :layout, "layouts/application"
 
 activate :autoprefixer
+activate :inline_svg
 
 configure :production do
   activate :asset_hash

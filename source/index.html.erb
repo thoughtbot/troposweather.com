@@ -1,7 +1,7 @@
 <div class="container">
   <div class="page-content">
     <div class="app-copy">
-      <%= svg "tropos-app-icon" %>
+      <%= inline_svg "tropos-app-icon.svg", aria_hidden: true %>
 
       <h1>
         Tropos
@@ -17,7 +17,10 @@
         "https://itunes.apple.com/us/app/tropos-weather-forecasts-for/id955209376",
         class: "app-store-link",
       ) do %>
-        <%= svg "app-store-badge" %>
+        <%= inline_svg(
+          "app-store-badge.svg",
+          title: "Download on the App Store",
+        ) %>
       <% end %>
 
       <% link_to(
