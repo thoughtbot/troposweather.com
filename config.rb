@@ -3,7 +3,6 @@ set :fonts_dir, "assets/fonts"
 set :images_dir, "assets/images"
 set :layout, "layouts/application"
 
-activate :autoprefixer
 activate :inline_svg
 
 configure :production do
