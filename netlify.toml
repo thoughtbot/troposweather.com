@@ -1,3 +1,9 @@
 [build]
   publish = "build"
   command = "bundle exec middleman build --verbose"
+
+[[redirects]]
+  from = "https://tropos.netlify.com/*"
+  to = "https://www.troposweather.com/:splat"
+  status = 301
+  force = true
