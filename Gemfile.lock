@@ -111,11 +111,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  middleman (~> 4.2)
+  middleman
   middleman-autoprefixer
   middleman-inline_svg
   middleman-minify-html
-  sass (~> 3.4)
+  sass
 
 RUBY VERSION
    ruby 2.5.3p105
