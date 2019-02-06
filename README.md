@@ -35,12 +35,3 @@ This website is deployed on [Netlify][netlify]. Trigger a deploy by pushing to
 the `master` branch on GitHub.
 
 [netlify]: https://www.netlify.com/
-
-## Analytics
-
-We use Segment for analytics.
-
-See analytics in
-the [thoughtbot/tropos] Segment project.
-
-[thoughtbot/tropos]: https://app.segment.com/thoughtbot/sources/tropos/overview
