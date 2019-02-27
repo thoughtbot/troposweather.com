@@ -20,7 +20,7 @@ GEM
     execjs (2.7.0)
     fast_blank (1.0.0)
     fastimage (2.1.5)
-    ffi (1.9.25)
+    ffi (1.10.0)
     haml (5.0.4)
       temple (>= 0.8.0)
       tilt
@@ -89,8 +89,8 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.10.0)
       ffi (~> 1.0)
-    sassc (2.0.0)
-      ffi (~> 1.9.6)
+    sassc (2.0.1)
+      ffi (~> 1.9)
       rake
     servolux (0.13.0)
     temple (0.8.0)
