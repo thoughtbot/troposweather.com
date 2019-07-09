@@ -1,9 +1,9 @@
+activate :inline_svg
+
 config[:css_dir] = "assets/stylesheets"
 config[:fonts_dir] = "assets/fonts"
 config[:images_dir] = "assets/images"
-config[:layout] = "layouts/application"
-
-activate :inline_svg
+config[:js_dir] = "assets/javascripts"
 
 configure :production do
   activate :asset_hash
